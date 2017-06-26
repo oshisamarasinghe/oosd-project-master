@@ -17,6 +17,9 @@
     <!-- Animation library for notifications   -->
     <link href="css/animate.min.css" rel="stylesheet"/>
 
+    <!-- style library for notifications   -->
+    <link href="css/TimeTable.css" rel="stylesheet"/>
+
     <!--  Light Bootstrap Table core CSS    -->
     <link href="css/light-bootstrap-dashboard.css" rel="stylesheet"/>
 
@@ -149,29 +152,23 @@
                                     ADD TIMETABLE
                                     <div class="ripple-container"></div></a>
                             </li>
-                            <li class="">
-                                <a href="#messages" data-toggle="tab" aria-expanded="false">
+                            <li class="active">
+                                <a href="#update" data-toggle="tab" aria-expanded="false">
                                    UPDATE TIMETABLE
                                     <div class="ripple-container"></div></a>
                             </li>
-                            <li class="active">
-                                <a href="#settings" data-toggle="tab" aria-expanded="true">
-                                    <i class="material-icons">build</i>
-                                    Settings
-                                    <div class="ripple-container"></div></a>
 
-                            </li>
                         </ul>
                     </div>
                 </div>
             </div>
             <div class="content">
-                <div class="tab-content text-center">
+                <div class="tab-content ">
                     <div class="tab-pane" id="add">
-                       <div class="radio">
+                       <div class="radio" >
                         <label>
-                            <input type="radio" name="optionsRadios">
-                            Student semester Time table
+                            <input type="radio" name="optionsRadios">Student semester Time table
+
                         </label>
                     </div>
                         <div class="radio">
@@ -182,18 +179,33 @@
                         </div>
                         <div class="radio">
                             <label>
-                                <input type="radio" name="optionsRadiosDisabled" disabled>
+                                <input type="radio" name="optionsRadios" >
                                 Lecturer Time table
                             </label>
                         </div>
 
                     </div>
-                    <div class="tab-pane" id="messages">
-                        <p> I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus. I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at.</p>
-                    </div>
-                    <div class="tab-pane active" id="settings">
-                        <p>I think that’s a responsibility that I have, to push possibilities, to show people, this is the level that things could be at. So when you get something that has the name Kanye West on it, it’s supposed to be pushing the furthest possibilities. I will be the leader of a company that ends up being worth billions of dollars, because I got the answers. I understand culture. I am the nucleus.</p>
-                    </div>
+                    <div class="tab-pane" id="update">
+                        <div class="radio" >
+                            <label>
+                                <input type="radio" name="optionsRadios">Student semester Time table
+
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" checked="true">
+                                Lab Time table
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <label>
+                                <input type="radio" name="optionsRadios" >
+                                Lecturer Time table
+                            </label>
+                        </div>
+                         </div>
+
                 </div>
             </div>
         </div>
