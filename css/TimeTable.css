@@ -1,6 +1,7 @@
 .title{
     font-size: medium;
-    background-color: #55acee;
+    font-family: "Arial Black";
+
     font-size: large;
 }
 .category{
@@ -8,4 +9,5 @@
 }
 .tab-content{
     font-family: "Century Gothic";
+    color: #122b40;
 }
