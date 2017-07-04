@@ -349,11 +349,38 @@
                         <button type="submit" class="btn btn-primary"  >CLEAR</button>
 
                     </div>
-
-
-                                        </form>
-                                        </div>
+              </form>
+            </div>
                                     <div class="tab-pane" id="updatet">
+
+                                        <div class="section section-tabs">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-10">
+
+                                        <div class="card card-nav-tabs">
+                                            <div class="header header-success">
+                                                <!-- colors: "header-primary", "header-info", "header-success", "header-warning", "header-danger" -->
+                                                <div class="nav-tabs-navigation">
+                                                    <div class="nav-tabs-wrapper">
+                                                        <ul class="nav nav-tabs" data-tabs="tabs">
+                                                            <li class="active">
+                                                                <a href="#pupdate" data-toggle="tab" aria-expanded="false">
+                                                                    <B style="font-size: medium">PERMANENT UPDATE</B>
+                                                                    <div class="ripple-container"></div></a>
+                                                            </li>
+                                                            <li class="">
+                                                                <a href="#tupdate" data-toggle="tab" aria-expanded="false">
+                                                                    <B style="font-size: medium">TEMPORARY  UPDATE</B>
+                                                                    <div class="ripple-container"></div></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                               <div class="content">
+                                <div class="tab-content text-center">
+                                    <div class="tab-pane active" id="pupdate">
                                         <form>
                                             <div class="form-group" align="left">
                                                 <label for="type"  style="color: #080808;font-size: medium">Timetable type</label>
@@ -383,17 +410,7 @@
                                                         </select>
                                                     </div>
                                                 </div>
-                                                <div class="col-md-4">
-                                                    <div class="form-group" align="left">
-                                                        <label for="utype"   style="color: #080808;font-size: small">Update option:</label>
-                                                        <select class="form-control" id="utype">
-                                                            <option>Temporary</option>
-                                                            <option>Permanent</option>
 
-
-                                                        </select>
-                                                    </div>
-                                                </div>
                                                 <div class="col-md-4">
                                                     <div class="form-group">
 
@@ -526,6 +543,7 @@
                                                         </tr>
                                                         </tbody>
                                                     </table>
+                                                </div>
                                                     <div class="row" align="right">
                                                         <button type="submit" class="btn btn-primary" >SAVE UPDATE</button>
                                                         <label></label>
@@ -533,10 +551,197 @@
 
 
                                                     </div>
-                                                </div>
 
                                         </form>
                                     </div>
+
+
+                                            <div class="tab-pane" id="tupdate">
+                                                <form>
+                                                    <div class="form-group" align="left">
+                                                        <label for="ttlype"  style="color: #080808;font-size: medium">Timetable type </label>
+                                                        <select class="form-control" id="ttlype">
+                                                            <option>Semester Timetable</option>
+                                                            <option>Lecturer Timetable</option>
+                                                            <option>Lab Timetable</option>
+
+                                                        </select>
+                                                    </div>
+
+
+                                                    <div class="row">
+
+                                                        <div class="col-md-4">
+                                                            <div class="form-group"align="left">
+                                                                <label for="inputTpID"  style="color: #080808;font-size: small">Table ID: </label>
+                                                                <select class="form-control" id="inputTpID">
+                                                                    <option>LAB-01</option>
+                                                                    <option>LAB-02</option>
+                                                                    <option>LEC-01</option>
+                                                                    <option>LEC-02</option>
+                                                                    <option>SEM-01</option>
+                                                                    <option>SEM-02</option>
+
+
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-9">
+
+                                                            <div class="col-md-4">
+                                                                <div class="form-group">
+
+                                                                    <br>
+                                                                    <button type="submit" class="btn btn-primary"  >VIEW TIMETABLE</button>
+
+                                                                </div>
+                                                            </div>
+                                                  </div>
+
+
+                                                    <div class="content table-responsive table-full-width">
+                                                        <table class="table table-hover table-striped" style="font-family: Arial ;">
+                                                            <thead align="center">
+                                                            <th>TIME</th>
+                                                            <th>MONDAY</th>
+                                                            <th>TUESDAY</th>
+                                                            <th>WEDNESDAY</th>
+                                                            <th>THURSDAY</th>
+                                                            <th>FRIDAY</th>
+                                                            <th>SATURDAY</th>
+                                                            </thead>
+                                                            <tbody align="left">
+                                                            <tr>
+                                                                <td contenteditable="true">08.15AM-09.15AM</td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td contenteditable="true">09.15AM-10.15AM</td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td contenteditable="true">10.15AM-11.15AM</td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td contenteditable="true">11.15AM-12.15PM</td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td contenteditable="true">12.15PM-01.15PM</td>
+                                                                <td colspan="6" align="center"><h5 style="font-family: 'Arial Black'">LUNCH TIME</h5></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td contenteditable="true">01.15PM-02.15PM</td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td contenteditable="true">02.15PM-03.15PM</td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td contenteditable="true">03.15PM-04.15PM</td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td contenteditable="true" width="10%">04.15PM-05.15PM</td>
+                                                                <td contenteditable="true" width="10%"></td>
+                                                                <td contenteditable="true"width="10%"></td>
+                                                                <td contenteditable="true"width="10%"></td>
+                                                                <td contenteditable="true"width="10%"></td>
+                                                                <td contenteditable="true"width="10%"></td>
+                                                                <td contenteditable="true"width="10%"></td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td contenteditable="true">05.15PM-06.15PM</td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td contenteditable="true">06.15PM-07.15PM</td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+                                                                <td contenteditable="true"></td>
+
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                        <div class="row" align="right">
+                                                            <button type="submit" class="btn btn-primary" >SAVE UPDATE</button>
+                                                            <label></label>
+                                                            <button type="submit" class="btn btn-primary"  >CLEAR</button>
+
+
+                                                        </div>
+                                                    </div>
+
+                                                </form>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                            </div>
+                                        </div>
+
+                        </div>
+                           </div>
+                     </div>
+                  </div>
+
+
                                     <div class="tab-pane" id="viewt">
                                         <form>
                                             <div class="form-group" align="left">
@@ -743,6 +948,7 @@
                 </div>
             </div>
 </div>
+
 </body>
 
 <!--   Core JS Files   -->
